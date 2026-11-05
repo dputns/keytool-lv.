@@ -1,16 +1,11 @@
 .assistant-page{padding-top:32px}
-.assistant-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:center;gap:64px}
+.assistant-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start;gap:64px}
+.assistant-intro{padding-top:8px}
 .assistant-intro h1{margin-top:22px}
 .assistant-intro h1 span{color:#c74f20}
 .assistant-intro p{max-width:480px;color:var(--muted);font-size:17px}
 .assistant-chat{min-width:0}
 .assistant-widget{display:flex;flex-direction:column;border:1px solid #cfd7ca;border-radius:20px;background:#fffdf7;box-shadow:0 24px 56px #25382a1f;overflow:hidden}
-.assistant-widget-head{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 24px;background:var(--dark);color:#eff2e9;border-bottom:3px solid var(--accent)}
-.assistant-widget-head strong,.assistant-widget-head span{display:block}
-.assistant-widget-head strong{font-size:17px}
-.assistant-widget-head div span{font-size:12px;color:#b8c6b7;margin-top:3px}
-.assistant-online{display:flex!important;align-items:center;flex:none;padding:5px 11px;border:1px solid #ffffff24;border-radius:99px;font-size:12px!important;color:#d5dfd3}
-.assistant-online i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#83ccba;margin-right:7px}
 .assistant-messages{height:clamp(210px,34vh,400px);overflow:auto;padding:24px;overscroll-behavior:contain}
 .assistant-message{max-width:88%;margin-bottom:18px}
 .assistant-message:last-child{margin-bottom:0}
@@ -19,6 +14,8 @@
 .assistant-message-user p{display:inline-block;text-align:left;border-radius:14px 4px 14px 14px;background:#19251e;color:#eff2e9}
 .assistant-message-label{display:block;color:#727c70;font-size:10px;font-weight:750;letter-spacing:1.5px}
 .assistant-message-user .assistant-message-label{color:#c74f20}
+.assistant-message-bot .assistant-message-label{display:none}
+.assistant-message-bot p{margin-top:0}
 .assistant-message-actions{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;padding-left:2px;font-size:13px;font-weight:650}
 .assistant-message-actions a{display:inline-block;padding:4px 0;color:#b54b1b;text-underline-offset:3px}
 .assistant-message-actions a:hover{color:var(--ink)}
@@ -37,8 +34,9 @@
 .assistant-layout{grid-template-columns:minmax(0,1fr);gap:28px}
 .assistant-messages{height:320px;padding:20px}
 .assistant-suggestions,.assistant-form{padding-left:20px;padding-right:20px}
-.assistant-widget-head{padding:16px 20px}
 .assistant-message{max-width:92%}
 .assistant-form .button{flex:1 1 100%;justify-content:center}
 body:has(.assistant-form textarea:focus) .mobile-actions{display:none}
 }
+.assistant-intro .eyebrow{flex-wrap:wrap;row-gap:8px;margin:0 0 6px}
+.assistant-badge{display:inline-block;flex:none;white-space:nowrap;padding:3px 9px;border:1px solid #c74f20;border-radius:99px;color:#c74f20;font-size:10px;font-weight:750;letter-spacing:1.2px;vertical-align:middle}
