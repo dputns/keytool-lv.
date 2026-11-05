@@ -37,4 +37,5 @@
 .assistant-form .button{flex:1 1 100%;justify-content:center}
 body:has(.assistant-form textarea:focus) .mobile-actions{display:none}
 }
-.assistant-badge{display:inline-block;margin-left:10px;padding:3px 9px;border:1px solid #c74f20;border-radius:99px;color:#c74f20;font-size:10px;font-weight:750;letter-spacing:1.2px;vertical-align:middle}
+.assistant-intro .eyebrow{flex-wrap:wrap;row-gap:8px}
+.assistant-badge{display:inline-block;flex:none;white-space:nowrap;padding:3px 9px;border:1px solid #c74f20;border-radius:99px;color:#c74f20;font-size:10px;font-weight:750;letter-spacing:1.2px;vertical-align:middle}
