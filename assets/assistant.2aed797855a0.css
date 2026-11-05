@@ -1,5 +1,6 @@
 .assistant-page{padding-top:32px}
-.assistant-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:center;gap:64px}
+.assistant-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start;gap:64px}
+.assistant-intro{padding-top:8px}
 .assistant-intro h1{margin-top:22px}
 .assistant-intro h1 span{color:#c74f20}
 .assistant-intro p{max-width:480px;color:var(--muted);font-size:17px}
