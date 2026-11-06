@@ -16,3 +16,9 @@
 .nav-robot:hover .nav-robot-track,.nav-robot:focus-visible .nav-robot-track{animation-play-state:paused}
 @keyframes nav-robot-scroll{0%,22%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.nav-robot-track{animation:none}}
+.nav-robot svg{overflow:visible}
+.nav-robot-arm{transform-box:view-box;transform-origin:4.5px 12.5px;animation:nav-robot-wave 5s ease-in-out 1s infinite}
+.nav-robot:hover .nav-robot-arm,.nav-robot:focus-visible .nav-robot-arm{animation:nav-robot-wave-fast .9s ease-in-out infinite}
+@keyframes nav-robot-wave{0%,40%,100%{transform:rotate(0)}6%,18%,30%{transform:rotate(26deg)}12%,24%,36%{transform:rotate(-16deg)}}
+@keyframes nav-robot-wave-fast{0%,100%{transform:rotate(0)}25%{transform:rotate(26deg)}75%{transform:rotate(-16deg)}}
+@media(prefers-reduced-motion:reduce){.nav-robot-arm,.nav-robot:hover .nav-robot-arm{animation:none}}
